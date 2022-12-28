@@ -1,0 +1,128 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+body {
+    background-color: white;
+}
+header {
+    padding: 30px 70px; /*altura e largura*/
+    background-color: black;
+
+}
+.navigation{
+    display: flex;/*colocar um do lado do outro*/
+    align-items: center; /*alinhar horizontalmente*/
+    justify-content: space-between;/*colocar os itens em cada uma das extremidades*/
+}
+.navigation .logo {
+    width: 120px;
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 40px; /*espaçamento entre cada item da navegação*/
+}
+.navigation ul li a{ /*cada item da barra de navegação*/
+    color: rgb(131, 129, 125);
+    font-weight: 600; /*grossura da letra*/
+    font-size: 13px;
+    transition: a li 0.5s; /*tempo para o hover*/
+}
+.navigation ul li a:hover {
+    color: antiquewhite;
+    border-bottom: 1px solid antiquewhite; /*a letra fica sublinhada ddurante o hover*/
+}
+#check {
+    color: antiquewhite;
+    border-bottom: 1px solid antiquewhite; /*a letra fica sublinhada ddurante o hover*/
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem; /*espacamento nas laterais e tal*/
+}
+.title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: rgb(17, 17, 17);
+}
+.texto p{
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    margin-right: 10%;
+}
+.texto h3 {
+    margin-bottom: 2rem;
+    color:rgb(80, 73, 67);
+}
+.btn-comprar {
+    padding: 15px 30px;
+    background-color: rgb(105, 105, 71);
+    border-radius: 25px;
+    color: rgb(245, 242, 242);
+    font-size: 1rem;
+    margin-top: 3rem;
+    transition: all 0.5s;
+}
+.btn-comprar:hover {
+    opacity: .85 ; /*vai ficar transparente em 15%*/
+}
+.cor {
+    font-size: 1rem;
+    color:rgb(80, 73, 67);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.cores {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cores span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer; /*quando passar o mouse vai aparecer a maozinha*/
+    box-shadow: 1px 1px rgb(82, 79, 79); /*sombra embaixo do círculo*/
+    transition: all 0.5s;
+}
+.cores span:hover { 
+    opacity: .80;
+}
+#preto {
+    background-color: black;
+}
+#grafite {
+    background-color: #5a5d66 ;
+}
+#creme {
+    background-color:#e6e3bd;
+}
+.main-img {
+    transition: all 1s ease;
+    z-index: 100; /*passar por cima de tudo*/
+}
+.main-img img {
+    width: 300px;
+    transform: rotate(-7deg);
+}
+.circle {
+    position: absolute; /**/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+    clip-path: circle(800px at right 1000px);
+}
