@@ -35,11 +35,11 @@ header {
 }
 .navigation ul li a:hover {
     color: antiquewhite;
-    border-bottom: 1px solid antiquewhite; /*a letra fica sublinhada ddurante o hover*/
+    border-bottom: 1px solid antiquewhite; /*a letra fica sublinhada durante o hover*/
 }
 #check {
     color: antiquewhite;
-    border-bottom: 1px solid antiquewhite; /*a letra fica sublinhada ddurante o hover*/
+    border-bottom: 1px solid antiquewhite; /*a letra fica sublinhada durante o hover*/
 }
 section {
     display: flex;
